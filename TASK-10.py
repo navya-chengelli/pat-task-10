@@ -19,7 +19,7 @@ followers_element = wait.until(EC.presence_of_element_located((By.XPATH, "/html/
 following_element = wait.until(EC.presence_of_element_located((By.XPATH, "/html/body/div[2]/div/div/div[2]/div/div/div[1]/div[2]/section/main/div/header/section/ul/li[3]/button" )))
 
 # Extract the text which contains the number of followers and following
-followers_count = followers_element.text  # Title attribute for followers
+followers_count = followers_element.text  # Text for following
 following_count = following_element.text  # Text for following
 #
 print(f"Followers: {followers_count}")
